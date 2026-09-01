@@ -1,0 +1,80 @@
+/* timetable.css
+   Basic external CSS concepts: selectors, colors, borders,
+   box-sizing, hover effect, and simple responsive tweak. */
+
+/* Universal box-sizing so borders/padding don't break widths */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f3f4f6;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Table basics */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #444;
+  padding: 8px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 13px;
+}
+
+/* Header row styling */
+thead th {
+  background-color: #1e3a8a;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Period/No. columns */
+tbody th {
+  background-color: #e5e7eb;
+  font-weight: bold;
+}
+
+/* Zebra striping */
+tbody tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+/* Simple hover highlight */
+tbody tr:hover {
+  background-color: #dbeafe;
+}
+
+/* Empty cell styling */
+.empty {
+  color: #9ca3af;
+}
+
+/* Footnotes */
+.footnote {
+  font-size: 12px;
+  margin-top: 10px;
+  color: #374151;
+}
+
+/* Signature row */
+.signatures {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.signatures div {
+  text-align: center;
+  font-size: 12px;
+  flex: 1;
+  min-width: 140px;
+}

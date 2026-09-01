@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>S.Y. B.Tech I2 Timetable</title>
+
+<!-- Tailwind CSS via CDN (basic utility classes used for layout/spacing) -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- External CSS file (basic styling concepts: table borders, zebra rows, hover) -->
+<link rel="stylesheet" href="/styles/timetable.css">
+</head>
+<body>
+
+  <!-- Tailwind utility classes: max-width, centering, padding, shadow, rounded corners -->
+  <div class="max-w-6xl mx-auto bg-white p-6 rounded-lg shadow-md">
+
+    <!-- Header section -->
+    <div class="text-center mb-4">
+      <h2 class="text-sm font-semibold text-blue-900">Shri Vile Parle Kelavani Mandal's</h2>
+      <h1 class="text-xl font-bold text-blue-900">DWARKADAS J. SANGHVI COLLEGE OF ENGINEERING</h1>
+      <p class="text-xs text-gray-600">(Empowered Autonomous) Affiliated to the University of Mumbai</p>
+      <h2 class="text-lg font-bold mt-2">Department of Information Technology</h2>
+      <p class="text-sm text-gray-700">Time table for the academic term: July - Dec 2026</p>
+      <p class="text-sm font-medium mt-1">Class: S.Y. B.Tech - I2 &nbsp;&nbsp;|&nbsp;&nbsp; Sem: III &nbsp;&nbsp;|&nbsp;&nbsp; w.e.f: 16th July 2026</p>
+    </div>
+
+    <!-- Timetable -->
+    <div class="overflow-x-auto">
+      <table>
+        <thead>
+          <tr>
+            <th>No.</th>
+            <th>Period</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th rowspan="1">1</th>
+            <td>08:00 - 09:00</td>
+            <td>DF(PS)(64)</td>
+            <td>FA(DIV 2)(ST)(66)<br>FA(DIV 1)(NA)(65)</td>
+            <td>OE(65)</td>
+            <td>FA(DIV 2)(ST)(66)</td>
+            <td rowspan="2">OE(65)</td>
+            <td rowspan="2" class="empty">—</td>
+          </tr>
+          <tr>
+            <th>2</th>
+            <td>09:00 - 10:00</td>
+            <td>DF(PS)(64)</td>
+            <td>FA(DIV 1)(AK)(65)<br>FA(DIV 2)(SM)(66)</td>
+            <td>FA(DIV 1)(AK)(65)</td>
+            <td>UHV(RN)(65)</td>
+          </tr>
+          <tr>
+            <th class="empty">-</th>
+            <td>10:00 - 11:00</td>
+            <td>I2-1: DT (AP)(L6)</td>
+            <td>DBMS(NK)(65)</td>
+            <td>I2-1: DS(PH)(L6)</td>
+            <td>I2-1: WP(SP)(L1)</td>
+            <td>DS(PH)(66)</td>
+            <td rowspan="2" class="empty">—</td>
+          </tr>
+          <tr>
+            <th class="empty">-</th>
+            <td>11:00 - 12:00</td>
+            <td>I2-2: WP(SP)(L3)</td>
+            <td class="empty">—</td>
+            <td class="empty">—</td>
+            <td>I2-2: DBMS(NK)(L2)</td>
+            <td class="empty">—</td>
+          </tr>
+          <tr>
+            <th class="empty">-</th>
+            <td>12:00 - 01:00</td>
+            <td class="empty">—</td>
+            <td>UHV(RN)(65)</td>
+            <td class="empty">—</td>
+            <td class="empty">—</td>
+            <td class="empty">—</td>
+            <td class="empty">—</td>
+          </tr>
+          <tr>
+            <th>6</th>
+            <td>01:00 - 02:00</td>
+            <td>DBMS(NK)(65)</td>
+            <td>Machine Learning for All (CB)(65)</td>
+            <td>OS(SM)(65)</td>
+            <td rowspan="2">Innovative Product Development,<br>Research/Project Work (SP)</td>
+            <td>DBMS(NK)(65)</td>
+            <td class="empty">—</td>
+          </tr>
+          <tr>
+            <th>7</th>
+            <td>02:00 - 03:00</td>
+            <td>DS(ARJ)(65)</td>
+            <td>I2-1: DBMS(NK)(L1)<br>I2-2: DS(PH)(L2)</td>
+            <td>UHV(CT)(RN+DB)(65)</td>
+            <td>Community Engagement<br>Service (PH)</td>
+            <td class="empty">—</td>
+          </tr>
+          <tr>
+            <th>8</th>
+            <td>03:00 - 04:00</td>
+            <td class="empty">—</td>
+            <td class="empty">—</td>
+            <td>DS(ARJ)(65)</td>
+            <td class="empty">—</td>
+            <td class="empty">—</td>
+            <td class="empty">—</td>
+          </tr>
+          <tr>
+            <th>9</th>
+            <td>04:00 - 05:00</td>
+            <td class="empty">—</td>
+            <td class="empty">—</td>
+            <td class="empty">—</td>
+            <td class="empty">—</td>
+            <td class="empty">—</td>
+            <td class="empty">—</td>
+          </tr>
+          <tr>
+            <th>10</th>
+            <td>05:00 - 06:00</td>
+            <td class="empty">—</td>
+            <td class="empty">—</td>
+            <td class="empty">—</td>
+            <td class="empty">—</td>
+            <td class="empty">—</td>
+            <td class="empty">—</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Footnotes -->
+    <p class="footnote">
+      *Remedial / extra lectures and doubt-clearing sessions, # Hackathons and various events under the student chapters and clubs, Guest lectures and Innovative Product Development presentations will be conducted on Saturday
+    </p>
+    <p class="footnote">
+      <strong>Faculty:</strong> ARJ: Dr. A. R. Joshi, NK: Ms. Neha Katre, PS: Ms. Prachi Suttam, NA: Ms. Neha Agarwal, SM: Ms. Sweedle Machado, SP: Ms. Sharvari Patil, AP: Ms. Anushree Patkar, PH: Mr. Pravin Bole, CB: Mr. Chandrashekhar Badgujar, DB: Mr. Dhaval Birajdar, RN: Mr. Rajesh Nair, AK: Mr. Abhishek Katre, ST: Mr. Sarang Tembe
+    </p>
+
+
+  </div>
+</body>
+</html>

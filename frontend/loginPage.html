@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Login / Signup</title>
+<link rel="stylesheet" href="/styles/loginPage.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Student Portal</h1>
+    <p class="subtitle">Login or create a new account</p>
+
+    <!-- Hidden radio buttons used purely with CSS to switch tabs (no JS) -->
+    <input type="radio" name="tab-control" id="tab-login" checked>
+    <input type="radio" name="tab-control" id="tab-signup">
+
+    <div class="tabs">
+      <label for="tab-login">Login</label>
+      <label for="tab-signup">Sign Up</label>
+    </div>
+
+    <!-- LOGIN FORM -->
+    <form id="login-form" action="#" method="post">
+
+      <div class="field">
+        <label for="login-username">Username</label>
+        <input type="text" id="login-username" name="username" placeholder="Enter your username" required>
+      </div>
+
+      <div class="field">
+        <label for="login-password">Password</label>
+        <input type="password" id="login-password" name="password" placeholder="Enter your password" required minlength="6">
+      </div>
+
+      <div class="checkbox-field">
+        <input type="checkbox" id="remember-me" name="remember">
+        <label for="remember-me">Remember me</label>
+      </div>
+
+      <button type="submit">Login</button>
+    </form>
+
+    <!-- SIGNUP FORM -->
+    <form id="signup-form" action="#" method="post">
+
+      <div class="field">
+        <label for="signup-name">Name</label>
+        <input type="text" id="signup-name" name="name" placeholder="Full Name" required>
+      </div>
+      <div class="field">
+        <label for="signup-username">Username</label>
+        <input type="text" id="signup-username" name="username" placeholder="Choose a username" required>
+      </div>
+
+      <div class="field">
+        <label for="signup-password">Password</label>
+        <input type="password" id="signup-password" name="password" placeholder="Create a password" required minlength="6">
+      </div>
+
+      <div class="field">
+        <label for="signup-dob">Date of Birth</label>
+        <input type="date" id="signup-dob" name="dob" required>
+      </div>
+
+      <div class="field">
+        <label>Gender</label>
+        <div class="radio-group">
+          <label for="gender-male"><input type="radio" id="gender-male" name="gender" value="male" required>Male</label>
+          <label for="gender-female"><input type="radio" id="gender-female" name="gender" value="female">Female</label>
+          <label for="gender-other"><input type="radio" id="gender-other" name="gender" value="other">Other</label>
+        </div>
+      </div>
+
+      <div class="checkbox-field">
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the Terms and Conditions</label>
+      </div>
+
+      <button type="submit">Sign Up</button>
+    </form>
+
+  </div>
+</body>
+</html>

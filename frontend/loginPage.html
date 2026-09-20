@@ -6,7 +6,33 @@
 <title>Student Login / Signup</title>
 <link rel="stylesheet" href="/styles/loginPage.css">
 </head>
+
 <body>
+  
+  <script>
+    document.getElementById('login-form').addEventListener('submit', function (e) {
+      e.preventDefault(); // stop the page reload
+
+      const username = document.getElementById('login-username').value;
+      const password = document.getElementById('login-password').value;
+
+      // TODO: replace with real auth check
+      if (username && password) {
+        openTimetable();
+      }
+    });
+
+    document.getElementById('signup-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      // TODO: handle signup (e.g. send to backend, then switch to login tab)
+      console.log('Signing up...');
+    });
+
+    function openTimetable() {
+      window.location = "./timetable.html";
+    }
+  </script>
 
   <div class="container">
     <h1>Student Portal</h1>
@@ -22,7 +48,7 @@
     </div>
 
     <!-- LOGIN FORM -->
-    <form id="login-form" action="#" method="post">
+    <form id="login-form">
 
       <div class="field">
         <label for="login-username">Username</label>
